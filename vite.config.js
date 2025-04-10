@@ -4,19 +4,15 @@ import { resolve } from 'path'
 
 export default defineConfig({
   plugins: [vue()],
+  define: {
+    'process.env.NODE_ENV': JSON.stringify('production'),
+  },
   build: {
     lib: {
       entry: resolve(__dirname, 'src/embed.js'),
       name: 'ChatWidget',
       fileName: () => 'chat-widget.js',
-      formats: ['iife'], // Immediately Invoked Function Expression
-    },
-    rollupOptions: {
-      output: {
-        globals: {
-          vue: 'Vue',
-        },
-      },
+      formats: ['iife'], // Self-executing script
     },
   },
 })
