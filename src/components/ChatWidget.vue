@@ -34,7 +34,7 @@ const sendMessage = () => {
 
 <style scoped>
 .chat-widget {
-  position: fixed;
+  position: absolute;
   bottom: 20px;
   right: 20px;
   width: 250px;
@@ -44,6 +44,7 @@ const sendMessage = () => {
   font-family: sans-serif;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  z-index: 1000;
 }
 
 .chat-header {
