@@ -1,6 +1,7 @@
 // src/embed.js
 import { createApp } from 'vue'
 import ChatWidget from './components/ChatWidget.vue'
+import './styles/widget.css' // Import your global CSS
 
 const mountWidget = () => {
   const el = document.createElement('div')

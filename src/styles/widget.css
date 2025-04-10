@@ -1,0 +1,47 @@
+chat-widget {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 250px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-family: sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.chat-header {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  font-weight: bold;
+}
+
+.chat-body {
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.messages {
+  max-height: 150px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.message {
+  background: #f1f1f1;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
